@@ -1,0 +1,198 @@
+/* Icons by https://www.flaticon.com/authors/freepik */
+/* Photos by https://unsplash.com/search/photos/neon-portrait and
+https://www.pexels.com*/
+/* designed by @Shreeram K */
+/* inspired by @mmaggie.design */
+:root {
+    --heading-color: #030303;
+    --secondary-color: #595E4B;
+    --bg-color: #fff;
+    --active-color: #000;
+    --btn-color: #fff;
+    --nav-heading: rgba(0,0,0,.9);
+    --nav-link: #343a40;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    transition: all .6s;
+}
+
+.navbar {
+    min-height: 80px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bg-light {
+    background-color: #ffffff00 !important;
+}
+
+.navbar-brand {
+    height: 90px;
+    line-height: 80px;
+    color: var(--nav-heading) !important;
+    text-transform: uppercase;
+    padding-left: 19%;
+}
+.nav-link {
+    color: var(--nav-link) !important;
+}
+.navbar-toggler-icon {
+    background-image: url("../img/menu.svg") !important;
+    width: 3em;
+    height: 2em;
+}
+.user-icon, .shopingbag-icon, .hammenu-icon {
+    background-image: url("../img/user.svg") !important;
+    width: 3em;
+    height: 2em;
+    display: block;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+.shopingbag-icon {
+    background-image: url("../img/shopping-bag.svg") !important;
+}
+.hammenu-icon {
+    background-image: url("../img/menu.svg") !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: 0;
+}
+
+.active-home, .underline {
+    border-bottom: 2px solid var(--active-color);
+}
+.underline {
+    width: 96px !important;
+}
+
+.btn-shop {
+    color: var(--btn-color);
+    background-color: #030303;
+    border-color: none;
+    border-radius: 0px;
+    width: 175px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-shop:hover {
+    background-color: #161625;
+}
+/* aligning shop now text to middle */
+.p-shop {
+    color: #fff;
+    font-size: 16px;
+    opacity: 1;
+    padding-top: 6px;
+}
+.nav-btn {
+    color: var(--btn-color);
+    width: 72px;
+    border-radius: 38px;
+}
+.btn:focus {
+    box-shadow: none;
+}
+h1 {
+    color: var(--heading-color);
+    letter-spacing: 0.56px;
+    line-height: 63px;
+    font-family: 'Fjalla One', sans-serif;
+}
+p {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: var(--secondary-color);
+    opacity: .5;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    p {
+        letter-spacing: .01em;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: 'calt' 0;
+        line-height: 38px;
+    }
+    .input-landing {
+        width: 91%;
+    }
+    .btn-landing {
+        margin-left: auto;
+        left: 214px;
+    bottom: 7px;
+    }
+    .svg-col {
+        display: none;
+    }
+    .p-shop {
+        padding-top: 0px;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: 0;
+}
+
+a:hover {
+    color: #0019e6b3;
+    text-decoration: none;
+}
+
+.form-control {
+    background-color: #8080;
+}
+
+.form-control:focus {
+    border-color: #808080 !important;
+    box-shadow: none;
+}
+
+.img-landing {
+    max-width: 19em;
+    height: 24em;
+    padding-right: 15px;
+}
+
+
+
+/* custom scroll bar used for gallery scroll */
+
+::-webkit-scrollbar {
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border: 16px solid rgba(255, 255, 255, 0);
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #212121;
+}
+::-webkit-scrollbar-thumb:hover {
+    border: 15px solid rgba(255, 255, 255, 0);
+}
+
+  
+.img-wrapper {
+    width: 47.7em;
+}
+@media only screen and (max-width: 768px) {
+    .img-wrapper {
+        width: auto;
+    }
+}
